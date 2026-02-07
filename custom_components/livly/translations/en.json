@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Livly Login",
+        "description": "Enter your phone number to receive a verification code via SMS.",
+        "data": {
+          "country_code": "Country Code",
+          "phone_local": "Phone Number"
+        }
+      },
+      "otp": {
+        "title": "Enter Verification Code",
+        "description": "A verification code has been sent to {phone_number}. Enter the 6-digit code below.",
+        "data": {
+          "otp_code": "Verification Code"
+        }
+      }
+    },
+    "error": {
+      "invalid_phone_format": "Invalid phone format. Use international format: +1234567890",
+      "otp_send_failed": "Failed to send verification code. Please try again.",
+      "invalid_otp_format": "Verification code must be exactly 6 digits.",
+      "invalid_otp": "Invalid verification code. Please try again."
+    },
+    "abort": {
+      "already_configured": "This phone number is already configured."
+    }
+  }
+}
